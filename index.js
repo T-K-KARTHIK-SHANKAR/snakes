@@ -22,7 +22,7 @@ init();
 }
 let canvas,ctx,playerNumber,gameActive=false;
 import {io} from "https://cdn.socket.io/4.4.1/socket.io.esm.min.js";
-const socket=io("http://192.168.1.8:3000");
+const socket=io("https://multiplayersnakegamek.herokuapp.com/");
 socket.on('init',handleInit);
 socket.on('gameState',handleGameSate);
 socket.on('gameOver',handleGameOver);
