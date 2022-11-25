@@ -77,7 +77,6 @@ socket.emit('chat',msg);
 }
 function keydown(e)
 {
-console.log(typeof(keycode));
 socket.emit('keydown',e.keyCode);
 }
 
