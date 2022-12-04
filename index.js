@@ -77,6 +77,7 @@ socket.emit('chat',msg);
 }
 function keydown(e)
 {
+e.preventDefault();
 socket.emit('keydown',e.keyCode);
 }
 
@@ -184,6 +185,7 @@ textarea.style.display="none";
 
 function broadcastmsg(msg)
 {
+alert(msg);
 console.log(msg);
 }
 
