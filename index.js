@@ -63,7 +63,7 @@ textarea.style.display="block";
 sendbtn.style.display="block";
 canvas=document.getElementById('canvas');
 ctx=canvas.getContext('2d');
-canvas.width=canvas.height=600;
+canvas.width=canvas.height=500;
 ctx.fillStyle=BG_COLOR;
 ctx.fillRect(0,0,canvas.width,canvas.height);
 document.addEventListener('keydown',keydown);
