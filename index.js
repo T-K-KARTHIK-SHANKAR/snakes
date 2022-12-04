@@ -111,6 +111,7 @@ playerNumber=number;
 
 function handleGameSate(gameState)
 {
+header.style.display="none";
 if(!gameActive)
 {
 return;
