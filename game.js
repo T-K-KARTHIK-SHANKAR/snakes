@@ -24,6 +24,7 @@ return {
         {x:2,y:10},
         {x:3,y:10},
         ],
+        score:0,
     },{
         pos:{
             x:18,
@@ -38,6 +39,7 @@ return {
         {x:19,y:10},
         {x:18,y:10},
         ],
+        score:0,
     }],
     food:{
     
@@ -63,6 +65,11 @@ if(playerTwo.pos.x<0 || playerTwo.pos.x > GRID_SIZE || playerTwo.pos.y<0 || play
 return 1;
 if(state.food.x===playerOne.pos.x && state.food.y===playerOne.pos.y)
 {
+playerOne.score+=1;
+if(playerOne.score==4)
+{
+return 1;
+}
 playerOne.snake.push({...playerOne.pos});
 playerOne.pos.x+=playerOne.vel.x;
 playerOne.pos.y+=playerOne.vel.y;
@@ -70,6 +77,11 @@ randomFood(state);
 }
 if(state.food.x===playerTwo.pos.x && state.food.y===playerTwo.pos.y)
 {
+playerTwo.score+=1;
+if(playerTwo.score==4)
+{
+return 2;
+}
 playerTwo.snake.push({...playerTwo.pos});
 playerTwo.pos.x+=playerTwo.vel.x;
 playerTwo.pos.y+=playerTwo.vel.y;
