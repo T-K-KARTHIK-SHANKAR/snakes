@@ -141,7 +141,7 @@ const port=process.env.PORT||3000;
 /* io.listen(3000,'0.0.0.0',function(){
     console.log('listening on *:3000');
   }); */
-  server.listen(port,'0.0.0.0',()=>{
+  server.listen(process.env.port||3000,'0.0.0.0',()=>{
     console.log('listening on port number'+port)
   });
 
