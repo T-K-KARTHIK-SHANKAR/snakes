@@ -1,7 +1,8 @@
 {
   "scripts": {
     "start": "node server",
-    "dev": "nodemon server"
+    "dev": "nodemon server",
+    "test": "NODE_ENV=production blitz build && blitz prisma migrate deploy"
   },
   "dependencies": {
     "cors": "^2.8.5",
