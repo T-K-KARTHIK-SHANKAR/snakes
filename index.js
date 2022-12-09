@@ -22,7 +22,7 @@ init();
 }
 let canvas,ctx,playerNumber,gameActive=false;
 import {io} from "https://cdn.socket.io/4.4.1/socket.io.esm.min.js";
-const socket=io("https://web-production-61c0.up.railway.app/");
+const socket=io("https://railway.app/project/64134aa3-79d7-496c-a295-431efcd5e73d/service/618c2dd5-89ef-4b3f-87af-374df6a24b3d?id=2e2a2557-f208-437f-bc34-f49dd9e701e9");
 socket.on('init',handleInit);
 socket.on('gameState',handleGameSate);
 socket.on('gameOver',handleGameOver);
