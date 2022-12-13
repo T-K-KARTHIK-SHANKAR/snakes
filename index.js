@@ -22,7 +22,7 @@ init();
 }
 let canvas,ctx,playerNumber,gameActive=false;
 import {io} from "https://cdn.socket.io/4.4.1/socket.io.esm.min.js";
-const socket=io("https://glitch.com/edit/console.html?abcefc95-75af-4f37-aed0-1be6ec16b203");
+const socket=io("https://legend-time-mask.glitch.me");
 socket.on('init',handleInit);
 socket.on('gameState',handleGameSate);
 socket.on('gameOver',handleGameOver);
